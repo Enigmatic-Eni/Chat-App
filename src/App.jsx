@@ -1,4 +1,8 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
 
 
 function App() {
@@ -6,7 +10,11 @@ function App() {
 
   return (
     <>
-      <div className=" bg-slate-800">Chat App</div>
+     <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path="/SignIn" element={<SignIn/>}/>
+      <Route path="/SignUp" element={<SignUp/>}/>
+     </Routes>
       
     </>
   )
