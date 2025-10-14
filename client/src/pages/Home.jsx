@@ -12,6 +12,8 @@ function Home() {
     <div className=" bg-gradient-to-b from-purple-950 to-black min-h-screen text-white px-14">
       <div className=' text-[65px] leading-[5.5rem]'>Connect <br />friends <br /> <span className=' font-bold'>easily & <br />quickly</span></div>
       <div className=' leading-8 pt-6'>Our chat app is the perfect way to stay connected to friends and family.</div>
+
+      <div>
       <div className=' flex items-center justify-center gap-6 p-5'>
         <div className=' border rounded-full p-2'>
           <FaFacebook className=' cursor-pointer text-2xl' />
@@ -33,7 +35,7 @@ function Home() {
         Log in 
         </Link>
         </div>
-
+</div>
 
     </div>
   )
