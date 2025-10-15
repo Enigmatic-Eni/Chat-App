@@ -2,6 +2,20 @@ import React from 'react';
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import {motion} from "framer-motion";
+
+const container = {
+  hidden: {opacity: 1},
+  show: {
+    opacity: 1,
+    transition: {staggerChildren: 0.5},
+  },
+}
+
+const fadeUp = {
+  hidden: {opacity: 0, y: 10},
+  show: {opacity: 1, y:0, transition:{ duration: 0.6, ease: "easeOut"}}
+}
 
 function SignIn() {
     const navigate = useNavigate();
@@ -11,7 +25,8 @@ function SignIn() {
     };
 
     return (
-        <div className=" px-12 py-4">
+         <motion.div className=' justify-center items-center flex'  variants={container} initial="hidden" animate="show">
+        <motion.div className=" w-[450px] py-4" variants={fadeUp}>
           
             <IoIosArrowRoundBack onClick={handleBackClick} className="cursor-pointer mb-4 text-2xl font-bold" />
 
@@ -35,7 +50,8 @@ function SignIn() {
 <div className=' text-center'>
             <Link className=' text-sm text-green-800 font-medium hover:text-black' to={""}>Forgot Password?</Link>
             </div>
-        </div>
+        </motion.div>
+        </motion.div>
     );
 }
 
