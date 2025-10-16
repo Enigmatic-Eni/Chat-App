@@ -29,7 +29,7 @@ function Home() {
       <div className='w-[600px]'>
       <motion.div variants={fadeUp}>
       <div className=' text-[65px] leading-[5.5rem]'>Connect friends <br /> <span className=' font-bold'>easily & quickly</span></div>
-      <div className=' leading-8 pt-6'>Our chat app is the perfect way to stay connected to friends and family.</div>
+      <div className=' leading-8 pt-6'>Our chat app is the perfect way to stay connected to friends and familyyyy</div>
       </motion.div>
 
       <div className=' mt-5'>
@@ -53,6 +53,7 @@ function Home() {
         <motion.div variants={fadeUp} className=' text-center pt-4 text-xs'>Already have an account?  
         <Link to="/SignIn" className=' font-bold pl-1'>
         Log in 
+
         </Link>
         </motion.div>
 </div>
